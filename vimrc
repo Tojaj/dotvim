@@ -1,0 +1,108 @@
+set nocompatible
+filetype off    " required by Vundle
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" let Vundle manage Vundle - required!
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+
+" original repos on github
+Bundle 'majutsushi/tagbar'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'rson/vim-conque'
+Bundle 'tomasr/molokai'
+Bundle 'altercation/vim-colors-solarized'
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Bundle 'tpope/vim-rails.git'
+
+" vim-scripts repos
+Bundle 'xoria256.vim'
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
+
+" non github repos
+"Bundle 'git://git.wincent.com/command-t.git'
+
+
+filetype plugin indent on     " required!
+
+set mouse=a
+
+set exrc        " enable per-directory .vimrc files
+set secure      " disable unsafe commands in local .vimrc files
+set vb
+
+set fileformat:unix
+set fileencoding:utf-8
+set tabstop:8
+set softtabstop:4
+set shiftwidth:4
+set expandtab
+set autoindent
+
+" Unindent of actual line
+imap <S-Tab> <Esc> < i
+
+colorscheme molokai
+" colorscheme solarized
+" colorscheme xoria256
+
+set background:dark
+set colorcolumn:80
+syn on
+set nu
+set ruler
+
+set ignorecase
+set smartcase
+
+set nowrap
+
+" Allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+set dir=/tmp
+
+set incsearch
+set hlsearch
+
+highlight ExtraWhitespace ctermbg=white guibg=white
+match ExtraWhitespace /\s\+$/
+
+au ColorScheme * highlight ExtraWhitespace guibg=red
+au BufEnter * match ExtraWhitespace /\s\+$/
+
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+"inoremap <c-k> <up>
+"inoremap <c-j> <down>
+"inoremap <c-h> <left>
+"inoremap <c-l> <right>
+
+" Compiling
+nmap <F10> :make clean<CR>:make<CR>
+
+" Nerd commenter
+filetype plugin on
+let mapleader = ","
+
+" NerdTree
+nmap <F7> :NERDTreeToggle<CR>
+
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_left=1
+
+" Conque
+nmap <F6> :ConqueTerm bash<CR>
+
+" Refresh ctags
+nmap <F5> :! ctags -R<CR>
