@@ -88,12 +88,21 @@ autocmd BufWinLeave * call clearmatches()
 "inoremap <c-h> <left>
 "inoremap <c-l> <right>
 
+let mapleader = ","
+
+""""""""""""""""""""""""
+" Plugin configuration "
+""""""""""""""""""""""""
+
 " Compiling
 nmap <F10> :make clean<CR>:make<CR>
 
+" Conque
+nmap <leader>t :CtrlP<CR>
+nmap <leader>b :CtrlPBuffer<CR>
+
 " Nerd commenter
 filetype plugin on
-let mapleader = ","
 
 " NerdTree
 nmap <F7> :NERDTreeToggle<CR>
@@ -107,3 +116,7 @@ nmap <F6> :ConqueTerm bash<CR>
 
 " Refresh ctags
 nmap <F5> :! ctags -R<CR>
+
+" MinibufExpl
+let g:miniBufExplMapCTabSwitchBufs = 1 "Map control-tab and control-shift-tab for switching between buffers
+let g:miniBufExplUseSingleClick = 1 "Change buffer with single click on a buffer
