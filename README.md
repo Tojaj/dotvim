@@ -62,7 +62,7 @@ buffer mode.
 ### NERD Tree - usage
 
 * `F7` - Invoke NERD Tree.
-* `r` - Refresh buffer of directory content.
+* `r` - Refresh content of selected directory.
 
 ## Install a new bundle
 
@@ -91,8 +91,8 @@ https://github.com/gmarik/vundle
 * `Ctrl+e` - Move screen up one line.
 * `Ctrl+y` - Move screen down one line.
 
-* `Shift+\*` - Go to the next one occurrence of the word under the cursor.
-* `Shift+\#` - Go to the previous one occurrence of the word under the cursor.
+* `Shift+*` - Go to the next one occurrence of the word under the cursor.
+* `Shift+#` - Go to the previous one occurrence of the word under the cursor.
 
 ### Options
 
@@ -111,9 +111,9 @@ Useful characters and patterns:
 * `.` - Matches any single character.
 * `\<` - Matches beginning of word.
 * `\>` - Matches and of word.
-* [str] - Matches any single character in *str*.
-* [^str] - Matches any character not in *str*.
-* [a-n] - Matches any character between *a* and *n*.
-* \* - Matches zero or more occurrences of previous character in expression.
-* \ - Escapes the meaning of the next character.
-* \\ - Escapes the \ character.
+* `[str]` - Matches any single character in *str*.
+* `[^str]` - Matches any character not in *str*.
+* `[a-n]` - Matches any character between *a* and *n*.
+* `\*` - Matches zero or more occurrences of previous character in expression.
+* `\` - Escapes the meaning of the next character.
+* `\\\\` - Escapes the \ character.
