@@ -72,6 +72,8 @@ Add `Bundle '...'` record into the `vimrc` file
 
 https://github.com/gmarik/vundle
 
+---------------------------------------------------
+
 ## Other common and useful Vim stuff
 
 ### Commands
@@ -114,6 +116,6 @@ Useful characters and patterns:
 * `[str]` - Matches any single character in *str*.
 * `[^str]` - Matches any character not in *str*.
 * `[a-n]` - Matches any character between *a* and *n*.
-* `\*` - Matches zero or more occurrences of previous character in expression.
+* `*` - Matches zero or more occurrences of previous character in expression.
 * `\` - Escapes the meaning of the next character.
-* `\\\\` - Escapes the \ character.
+* `\\` - Escapes the \ character.
