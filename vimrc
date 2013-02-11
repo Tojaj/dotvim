@@ -16,6 +16,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'rson/vim-conque'
 Bundle 'tomasr/molokai'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'kien/ctrlp.vim'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
