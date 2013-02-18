@@ -30,6 +30,7 @@ Launch `vim`, run `:BundleInstall`
 ## Configured mapping
 
 * `,` - Leader key
+* `F2` - Toggle paste insert mode
 * `F5` - Refresh tags file (ctags -R)
 * `F6` - Run Bash via ConqueTerm
 * `F7` - Toggle NerdTree
@@ -82,6 +83,7 @@ https://github.com/gmarik/vundle
 * `:bd` - Close current buffer.
 * `:sp` - Split window horizontally.
 * `:vsp` - Split window verticaly.
+* `:qa` - Quit (close all buffers/splits).
 * `:tag [tagname]` - Search for the tagname in ctags file.
 
 ### Shortcuts
@@ -103,6 +105,7 @@ https://github.com/gmarik/vundle
 * `set nu` - Show line numbers.
 * `set ic` - Ignore case when searching.
 * `set autoindent` - Enable auto indenting.
+* `set paste` - Enable paste mode (prevent destroying of indentation)
 
 ### Searching
 

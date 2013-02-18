@@ -89,6 +89,7 @@ autocmd BufWinLeave * call clearmatches()
 "inoremap <c-l> <right>
 
 let mapleader = ","
+set pastetoggle=<F2>
 
 """"""""""""""""""""""""
 " Plugin configuration "
