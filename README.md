@@ -122,3 +122,33 @@ Useful characters and patterns:
 * `*` - Matches zero or more occurrences of previous character in expression.
 * `\` - Escapes the meaning of the next character.
 * `\\` - Escapes the \ character.
+
+### Textobjects selection
+
+Textobject selection is a series of commands that can only be used while
+in Visual mode or after an operator (d - delete, c - change).
+
+**Basic:**
+
+Note: [count] is a optional number argument.
+
+* `[count]aw` - Select [count] words. (White space included, but not counted).
+* `[count]iw` - Select [count] inner words. (White space is counted too).
+* `[count]aW` - Select [count] WORDS.
+* `[count]iW` - Select [count] inner WORDS.
+* `[count]as` - Select [count] sentences.
+* `[count]is` - Select [count] sentences.
+* `[count]ap` - Select [count] paragraphs.
+* `[count]ip` - Select [count] paragraphs.
+* `[count]a[` - Select [count] '[' ']' blocks (chars like "(){}<>" could be used too).
+
+
+**Examples useful while programming:**
+
+From normal mode:
+
+* `di"` - To delete whole current string in "" - Useful when changing string.
+* `di(` - To delete whole content of () - Useful when editing function arguments.
+* `ci"` - Change the whole string.
+* `ci(` - Change content of ().
+
