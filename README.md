@@ -147,8 +147,11 @@ Note: [count] is a optional number argument.
 
 From normal mode:
 
-* `di"` - To delete whole current string in "" - Useful when changing string.
-* `di(` - To delete whole content of () - Useful when editing function arguments.
-* `ci"` - Change the whole string.
-* `ci(` - Change content of ().
+* `dd`  - Delete one line.
+* `3dd` - Delete three lines.
+* `di"` - Delete inner "" block - Delete a whole string.
+* `di(` or `dib` - Delete inner () block - Delete a function arguments.
+* `ci"` - Change inner "" block - Change a whole string.
+* `ci(` or `cib` - Change inner () block - Change a function arguments.
+* `di{` or `diB` - Delete inner {} block.
 
