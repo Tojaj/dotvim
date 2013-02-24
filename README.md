@@ -102,6 +102,7 @@ https://github.com/gmarik/vundle
 
 **Note:** Prepend "no" to the option to disable it (e.g. `set nonu`).
 
+* `set et` - Expand tab (long version: extandtab)
 * `set nu` - Show line numbers.
 * `set ic` - Ignore case when searching.
 * `set autoindent` - Enable auto indenting.
