@@ -91,6 +91,14 @@ https://github.com/gmarik/vundle
 * `q` - Stop recording.
 * `[count]@<letter>` - Replay record [count] times.
 
+* `:!<command>` - Run external command and show its output (normal mode).
+* `:!<command> %` - Run external command over the whole document (normal mode).
+ * `:!wc %` - Count lines in the current document (normal mode).
+* `!<command>` - Run external command on marked lines (visual mode).
+ * `!lsort` - Sorts marked lines (visual mode).
+* `!!<command>` - Run external command and insert its output into the text (normal mode).
+ * `!!uname` - Get system information (normal mode).
+
 ### Shortcuts
 
 * `Ctrl+]` - Jump to the tag under cursor.
