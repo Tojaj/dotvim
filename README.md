@@ -109,8 +109,12 @@ Running external commands
 * `Ctrl+o` - Go to the previous cursor position.
 * `Ctrl+i` - Go to the newer one cursor position.
 
+Moving screen
+
 * `Ctrl+e` - Move screen up one line.
 * `Ctrl+y` - Move screen down one line.
+
+Goto
 
 * `Shift+*` - Go to the next one occurrence of the word under the cursor.
 * `Shift+#` - Go to the previous one occurrence of the word under the cursor.
