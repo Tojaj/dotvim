@@ -86,6 +86,11 @@ https://github.com/gmarik/vundle
 * `:qa` - Quit (close all buffers/splits).
 * `:tag [tagname]` - Search for the tagname in ctags file.
 
+* `.` - Repeats last text change command.
+* `q<letter>` - Start recording.
+* `q` - Stop recording.
+* `[count]@<letter>` - Replay record [count] times.
+
 ### Shortcuts
 
 * `Ctrl+]` - Jump to the tag under cursor.
