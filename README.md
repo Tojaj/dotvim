@@ -86,10 +86,14 @@ https://github.com/gmarik/vundle
 * `:qa` - Quit (close all buffers/splits).
 * `:tag [tagname]` - Search for the tagname in ctags file.
 
+Recording
+
 * `.` - Repeats last text change command.
 * `q<letter>` - Start recording.
 * `q` - Stop recording.
 * `[count]@<letter>` - Replay record [count] times.
+
+Running external commands
 
 * `:!<command>` - Run external command and show its output (normal mode).
 * `:!<command> %` - Run external command over the whole document (normal mode).
