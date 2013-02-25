@@ -10,7 +10,7 @@ Bundle 'gmarik/vundle'
 
 " original repos on github
 Bundle 'majutsushi/tagbar'
-Bundle 'fholgado/minibufexpl.vim'
+"Bundle 'fholgado/minibufexpl.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'rson/vim-conque'
@@ -119,5 +119,5 @@ nmap <F6> :ConqueTerm bash<CR>
 nmap <F5> :! ctags -R<CR>
 
 " MinibufExpl
-let g:miniBufExplMapCTabSwitchBufs = 1 "Map control-tab and control-shift-tab for switching between buffers
-let g:miniBufExplUseSingleClick = 1 "Change buffer with single click on a buffer
+"let g:miniBufExplMapCTabSwitchBufs = 1 "Map control-tab and control-shift-tab for switching between buffers
+"let g:miniBufExplUseSingleClick = 1 "Change buffer with single click on a buffer

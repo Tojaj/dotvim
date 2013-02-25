@@ -18,7 +18,6 @@ Launch `vim`, run `:BundleInstall`
 
 * **Conque** - Allows you to run interactive programs, such as bash
 * **CtrlP.vim** - Full path fuzzy file, buffer, mru, tag, ... finder for Vim
-* **MiniBufExplorer** - Elegant buffer explorer - takes very little screen space
 * **Molokai** - A port of the monokai scheme for TextMate
 * **NERD Commenter** - A plugin that allows for easy commenting of code for many filetypes
 * **NERD tree** - A tree explorer plugin for navigating the filesystem
