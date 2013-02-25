@@ -94,12 +94,12 @@ Recording
 
 Running external commands
 
-* `:!<command>` - Run external command and show its output (normal mode).
-* `:!<command> %` - Run external command over the whole document (normal mode).
+* `:!<command>` - Run shell command and show its output (normal mode).
+* `:!<command> %` - Run shell command on the current file (normal mode).
  * `:!wc %` - Count lines in the current document (normal mode).
-* `!<command>` - Run external command on marked lines (visual mode).
+* `!<command>` - Run shell command on marked lines (visual mode).
  * `!lsort` - Sorts marked lines (visual mode).
-* `!!<command>` - Run external command and insert its output into the text (normal mode).
+* `!!<command>` - Run shell command, places output in file starting at current line (normal mode).
  * `!!uname` - Get system information (normal mode).
 
 ### Shortcuts
@@ -108,10 +108,15 @@ Running external commands
 * `Ctrl+o` - Go to the previous cursor position.
 * `Ctrl+i` - Go to the newer one cursor position.
 
-Moving screen
+Navigation between splits
 
-* `Ctrl+e` - Move screen up one line.
-* `Ctrl+y` - Move screen down one line.
+* `Ctrl+w [hjkl]` - Move to the split on the (j-left, j-down, k-up, l-right)
+* `Ctrl+w Ctrl+w` - Move to the last active split.
+
+Moving the screen
+
+* `Ctrl+e` - Moves screen up one line.
+* `Ctrl+y` - Moves screen down one line.
 
 Goto
 
