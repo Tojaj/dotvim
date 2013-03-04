@@ -9,6 +9,17 @@ git clone https://github.com/Tojaj/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
+### Copy (yank) to system clipboard
+
+* ``"+y`` - Copy selected lines into the system clipboard.
+
+You will need vim with with X11 support. Specifically vim compiled with
+xterm_clipboard option on.
+Check it: ``vim --version | grep +xterm_clipboard``
+Next solution could be use gvim (``gvim -v`` for terminal mode) instead of vim.
+
+**Tip:** Add alias to *~/.bashrc*: ``alias vim='gvim -v'``.
+
 ## Install configured bundles
 
 Launch `vim`, run `:BundleInstall`
