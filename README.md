@@ -9,17 +9,6 @@ git clone https://github.com/Tojaj/dotvim.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
 ```
 
-### Copy (yank) to system clipboard
-
-* ``"+y`` - Copy selected lines into the system clipboard.
-
-You will need vim with with X11 support. Specifically vim compiled with
-xterm_clipboard option on.
-Check it: ``vim --version | grep +xterm_clipboard``
-Next solution could be use gvim (``gvim -v`` for terminal mode) instead of vim.
-
-**Tip:** Add alias to *~/.bashrc*: ``alias vim='gvim -v'``.
-
 ## Install configured bundles
 
 Launch `vim`, run `:BundleInstall`
@@ -87,6 +76,18 @@ https://github.com/gmarik/vundle
 
 ## Other common and useful Vim stuff
 
+### Copy (yank) to system clipboard
+
+* ``"+y`` - Copy selected lines into the system clipboard.
+
+You will need vim with with X11 support. Specifically vim compiled with
+xterm_clipboard option on.
+Check it: ``vim --version | grep +xterm_clipboard``
+Next solution could be use gvim (``gvim -v`` for terminal mode) instead of vim.
+
+**Tip:** Add alias to *~/.bashrc*: ``alias vim='gvim -v'``.
+
+
 ### Commands
 
 * `:edit [filename]` - Open the filename.
@@ -131,8 +132,8 @@ Moving the screen
 
 Goto
 
-* `Shift+*` - Go to the next one occurrence of the word under the cursor.
-* `Shift+#` - Go to the previous one occurrence of the word under the cursor.
+* ``Shift+*`` - Go to the next one occurrence of the word under the cursor.
+* ``Shift+#`` - Go to the previous one occurrence of the word under the cursor.
 
 ### Options
 
@@ -156,9 +157,9 @@ Useful characters and patterns:
 * `[str]` - Matches any single character in *str*.
 * `[^str]` - Matches any character not in *str*.
 * `[a-n]` - Matches any character between *a* and *n*.
-* `*` - Matches zero or more occurrences of previous character in expression.
-* `\` - Escapes the meaning of the next character.
-* `\\` - Escapes the \ character.
+* ``*`` - Matches zero or more occurrences of previous character in expression.
+* ``\`` - Escapes the meaning of the next character.
+* ``\\`` - Escapes the \ character.
 
 ### Textobjects selection
 
