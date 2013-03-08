@@ -98,9 +98,10 @@ set pastetoggle=<F2>
 " Compiling
 nmap <F10> :make clean<CR>:make<CR>
 
-" Conque
+" Ctrlp
 nmap <leader>t :CtrlP<CR>
 nmap <leader>b :CtrlPBuffer<CR>
+let g:ctrlp_mruf_last_entered = 1 " Preselect last used buffer in <leader>b
 
 " Nerd commenter
 filetype plugin on

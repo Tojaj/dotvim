@@ -11,8 +11,8 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 ## Install configured bundles
 
-Launch `vim`, run `:BundleInstall`
-(or `vim +BundleInstall +qall` for CLI lovers)
+Launch ``vim``, run ``:BundleInstall``
+(or ``vim +BundleInstall +qall`` for CLI lovers)
 
 ## Included Plugins
 
@@ -28,27 +28,28 @@ Launch `vim`, run `:BundleInstall`
 
 ## Configured mapping
 
-* `,` - Leader key
-* `F2` - Toggle paste insert mode
-* `F5` - Refresh tags file (ctags -R)
-* `F6` - Run Bash via ConqueTerm
-* `F7` - Toggle NerdTree
-* `F8` - Toggle TagBar
-* `F10` - make clean && make
-* `Ctrl+P` - Invoke CtrlP
+* ``,`` - Leader key
+* ``F2`` - Toggle paste insert mode
+* ``F5`` - Refresh tags file (ctags -R)
+* ``F6`` - Run Bash via ConqueTerm
+* ``F7`` - Toggle NerdTree
+* ``F8`` - Toggle TagBar
+* ``F10`` - make clean && make
+* ``Ctrl+P`` - Invoke CtrlP
 
 ### CtrlP.vim - usage
 
 Press `Ctrl+P` or `,+t` to invoke CtrlP in file find mode or `,+b` in find
 buffer mode.
 
-* `F5` - Purge the cache for the current directory to get new files,
+* ``F5`` - Purge the cache for the current directory to get new files,
          remove deleted files and apply new ignore options.
-* `Ctrl+f` or `Ctrl+b` - Cycle between modes.
-* `Ctrl+d` - Switch to filename search instead of full path.
-* `Ctrl+r` - Regexp mode.
-* `Ctrl+y` - Create a new file and its parent directories.
-* `Ctrl+z` - Mark/Unmark multiple files and `Ctrl+o` to open them.
+* ``Ctrl+f`` or `Ctrl+b` - Cycle between modes.
+* ``Ctrl+d`` - Switch to filename search instead of full path.
+* ``Ctrl+r`` - Regexp mode.
+* ``Ctrl+y`` - Create a new file and its parent directories.
+* ``Ctrl+z`` - Mark/Unmark multiple files and `Ctrl+o` to open them.
+* ``Ctrl+^`` - Switch to last used buffer (from normal mode).
 
 ### NERD Commenter - usage
 
