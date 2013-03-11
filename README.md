@@ -115,6 +115,11 @@ Running external commands
 * `!!<command>` - Run shell command, places output in file starting at current line (normal mode).
  * `!!uname` - Get system information (normal mode).
 
+### Other mixed tips
+
+* ``Ctrl+n`` - Completition.
+* ``q+:`` - Commands history (normal mode).
+
 ### Shortcuts
 
 * `Ctrl+]` - Jump to the tag under cursor.
