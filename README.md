@@ -21,6 +21,7 @@ Launch ``vim``, run ``:BundleInstall``
 * **Molokai** - A port of the monokai scheme for TextMate
 * **NERD Commenter** - A plugin that allows for easy commenting of code for many filetypes
 * **NERD tree** - A tree explorer plugin for navigating the filesystem
+* **Python-mode** - Vim python-mode. PyLint, Rope, Pydoc, breakpoints from box
 * **Solarized** - Precision colorscheme for the vim text editor
 * **Tagbar** - Display tags of the current file ordered by scope
 * **Vundle** - Vundle, the plug-in manager for Vim
