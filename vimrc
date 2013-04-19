@@ -118,7 +118,7 @@ let g:tagbar_left=1
 nmap <F6> :ConqueTerm bash<CR>
 
 " Refresh ctags
-nmap <F5> :! ctags -R<CR>
+nmap <F5> :! ctags --links=no -R<CR>
 
 " MinibufExpl
 "let g:miniBufExplMapCTabSwitchBufs = 1 "Map control-tab and control-shift-tab for switching between buffers
