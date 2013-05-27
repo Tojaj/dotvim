@@ -141,6 +141,7 @@ Goto
 
 * ``Shift+*`` - Go to the next one occurrence of the word under the cursor.
 * ``Shift+#`` - Go to the previous one occurrence of the word under the cursor.
+* ``%`` - Go to the matching (opening or closing) parenthesis, square bracket or a curly brace.
 
 ### Options
 
