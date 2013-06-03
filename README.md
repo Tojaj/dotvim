@@ -169,6 +169,13 @@ Useful characters and patterns:
 * ``\`` - Escapes the meaning of the next character.
 * ``\\`` - Escapes the \ character.
 
+### Replace
+
+* ``%s/foo/bar/`` - Replace "foo" with "bar" in whole file
+* ``.,$s/foo/bar/`` - Replace "foo" with "bar" from current position to end of file.
+* ``%s/foo/bar/c`` - Replace "foo" with "bar" in whole file with confirmation for each replace
+* ``%s/foo/bar/g`` - Replace "foo" with "bar"in while file and even multiple occurences on a single line.
+
 ### Textobjects selection
 
 Textobject selection is a series of commands that can only be used while
