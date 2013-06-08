@@ -124,6 +124,7 @@ Running external commands
 ### Shortcuts
 
 * `Ctrl+]` - Jump to the tag under cursor.
+* `g+<left click on the tag>` - Jump to the tag on which was clicked
 * `Ctrl+o` - Go to the previous cursor position.
 * `Ctrl+i` - Go to the newer one cursor position.
 
