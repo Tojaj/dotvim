@@ -31,7 +31,6 @@ Bundle 'xoria256.vim'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 
-
 filetype plugin indent on     " required!
 
 set mouse=a
@@ -51,6 +50,7 @@ set autoindent
 " Unindent of actual line
 imap <S-Tab> <Esc> < i
 
+set t_Co=256
 colorscheme molokai
 " colorscheme solarized
 " colorscheme xoria256
