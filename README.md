@@ -130,7 +130,7 @@ Running external commands
 
 Navigation between splits
 
-* `Ctrl+w [hjkl]` - Move to the split on the (j-left, j-down, k-up, l-right)
+* `Ctrl+w [hjkl]` - Move to the split on the (h-left, j-down, k-up, l-right)
 * `Ctrl+w Ctrl+w` - Move to the last active split.
 
 Moving the screen
@@ -177,6 +177,23 @@ Useful characters and patterns:
 * ``%s/foo/bar/c`` - Replace "foo" with "bar" in whole file with confirmation for each replace
 * ``%s/foo/bar/g`` - Replace "foo" with "bar"in while file and even multiple occurences on a single line.
 
+### Line operations
+
+`:g` (`:global`) executes a command on all lines that match a regex.
+
+`g/regex/command_to_execute`
+
+* `:g/Debug/d` - Delete all lines that contain word `Debug`
+* `:g/Debug/d_` - Faster delete all lines that contain word `Debug` (because by default each deleted line is stored to a register and `_` stands for "blackhole" register)
+* `:g/^Debug/d` - Delete all lines that start with word `Debug`
+* `:g!/error/d` - Delete all lines that don't contain word `error`
+* `:v/error/d` - Delete all lines that don't contain word `error`
+* `:g/Warning/s/locahost/test.com/g` - Replace `localhost` string with `test.com` on all lines that start with `Warning`
+* `:g/Info/m$` - Move all lines matching a pttern to end of file
+* `:g/Info/t$` - Copy all lines matching a pttern to end of file
+* `:g/^Debug/s/$/some_text` - Add `some_text` string to end of each line that starts with `Debug`
+
+
 ### Textobjects selection
 
 Textobject selection is a series of commands that can only be used while
@@ -203,9 +220,9 @@ From normal mode:
 
 * `dd`  - Delete one line.
 * `3dd` - Delete three lines.
+* `diw` - Delete a word.
 * `di"` - Delete inner "" block - Delete a whole string.
 * `di(` or `dib` - Delete inner () block - Delete a function arguments.
 * `ci"` - Change inner "" block - Change a whole string.
 * `ci(` or `cib` - Change inner () block - Change a function arguments.
 * `di{` or `diB` - Delete inner {} block.
-
