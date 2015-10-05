@@ -169,6 +169,7 @@ Useful characters and patterns:
 * ``*`` - Matches zero or more occurrences of previous character in expression.
 * ``\`` - Escapes the meaning of the next character.
 * ``\\`` - Escapes the \ character.
+* ``\@!`` - Matches with zero width if the preceding atom does NOT match (e.g. ``/Foo\(\Bar\)\@!``)
 
 ### Replace
 
