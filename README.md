@@ -163,13 +163,27 @@ Useful characters and patterns:
 * `.` - Matches any single character.
 * `\<` - Matches beginning of word.
 * `\>` - Matches and of word.
+* ``\`` - Escapes the meaning of the next character.
+* ``\\`` - Escapes the \ character.
 * `[str]` - Matches any single character in *str*.
 * `[^str]` - Matches any character not in *str*.
 * `[a-n]` - Matches any character between *a* and *n*.
-* ``*`` - Matches zero or more occurrences of previous character in expression.
-* ``\`` - Escapes the meaning of the next character.
-* ``\\`` - Escapes the \ character.
-* ``\@!`` - Matches with zero width if the preceding atom does NOT match (e.g. ``/Foo\(\Bar\)\@!``)
+* ``*`` - Matches zero or more occurrences of previous atom in expression.
+* ``\?`` - Matches zero or one occurences of the preceding atom.
+* ``\+`` - Matches one or more occurences of the preceding atom.
+* ``\{n,m}`` - Matches n to m of the preceding atom.
+* ``\{n}`` - Matches n of the preceding atom.
+* ``\{n,}`` - Matches at least n of the preceding atom.
+* ``\{,m}`` - Matches 0 to m of the preceding atom.
+* ``\{}`` - Matches 0 or more of the preceding atom.
+* ``\@=`` - Matches the preceding atom with zero width. (e.g. ``Foo\(Bar\)\@=`` matches ``Foo`` in ``FooBar``).
+* ``\@!`` - Matches with zero width if the preceding atom does NOT match (e.g. ``/Foo\(\Bar\)\@!`` matches ``Foo`` not followed by ``Bar``).
+* ``\{-}`` - Non-greedy matching (e.g. ``.\{-}`` instead of ``.*``).
+* ``\n`` - Matches a newline character.
+* ``\_s`` - Matches a whitespace (space or tab) or newline character.
+* ``\_.`` - Matches any character including a newline.
+* ``\_^`` - Matches the beginning of a line (zero width).
+* ``\_$`` - Matches the end of a line (zero width).
 
 ### Replace
 
